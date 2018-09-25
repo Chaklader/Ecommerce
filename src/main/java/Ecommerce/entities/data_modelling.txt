@@ -1,0 +1,120 @@
+
+
+
+billing_address
+———————————————
+
+user_order (1 -> n) // the user can have many orders from the same billing address
+
+
+book table,
+———————————
+
+cart_item (1 -> n)
+
+book_to_cart_item (1 -> n)
+
+
+book_to_cart_item
+—————————————————
+
+cart_item
+—————————
+
+book_to_cart_item (1 -> n) //
+
+
+password_reset_token table,
+———————————————————————————
+
+
+payment table,
+——————————————
+
+user_order (1 -> n) // many orders can use the same payment info
+
+
+
+role table,
+———————————
+
+user_role (1 -> n) //
+
+
+shipping_address table,
+———————————————————————
+
+user_order (1 -> n) // we can have multiple orders in the same shipping address
+
+
+The shopping_cart table,
+————————————————————————
+
+cart_item  (1 -> n) // can have the many cart_item
+
+
+user table,
+———————————
+
+order (1 -> n) // can have multiple order's
+
+password_rest_tocken (1 -> n) // may need multiple password reset token
+
+user_shopping (1 -> n) // info of all the shipping for the particular user
+
+user_payment (1 -> n) // the user can have multiple credit card in the wallet
+
+user_role (1 -> n) // can have different roles say, the customer or the admin 
+
+shopping_cart (1 -> n)
+
+user_order (1 -> n)
+
+
+
+user_billing
+————————————
+
+
+user_order table,
+—————————————————
+
+cart_item (1 -> n) // need one to more items in the per order
+
+billing_address (1 -> n)
+
+shipping_address (1 -> n)
+
+payment (1 -> n) // this captures all the payment info
+
+
+user_payment table,
+———————————————————
+
+user_billing (1-> n) // we can use the same payment info for the multiple billing
+
+
+user_role
+—————————
+
+user_shipping
+—————————————
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
